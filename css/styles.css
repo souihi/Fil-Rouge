@@ -1,0 +1,640 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+}
+
+/*Propriétés de la navbar*/
+
+#nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    padding-left: 8%;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Logo Tunisie*/
+
+#logo-Tunisie {
+    width: 59px;
+    margin: 50px;
+}
+
+#logo-Tunisie:hover {
+    animation: logo-animationTunisie 0.5s cubic-bezier(0.46, 0.01, 1, 1);
+}
+
+@keyframes logo-animationTunisie {
+    21% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    80% {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+#logo-fricaFood {
+    margin-left: -55px;
+    width: 160px;
+}
+
+/*Liste navigations*/
+
+#nav-burger {
+   display: none;
+}
+
+.nav-link {
+    list-style-type: none;
+    display: flex;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+
+.liens {
+    font-size: 17px;
+    margin: 0 20px 0 20px;
+}
+
+.liens:hover {
+    text-decoration: underline
+}
+
+section {
+    position: relative;
+    padding: 100px 8% 100px 8%;
+    overflow: hidden;
+}
+
+
+
+/*################################################*/
+
+#block-1 {
+    background-image: url("../img/illustration_principale.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+}
+
+#photo-accueil {
+    width: 100%;
+    top: 70px;
+    background-size: cover;
+}
+
+
+#text-blanc-block-1 {
+    color: #ffffff;
+    font-family: "PoppinsBold";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.trait-saumon {
+    position: relative;
+    color: white;
+    font-size: 84px;
+    font-family: "VolkhovBold";
+    bottom: 40px;
+    line-height: 1.2;
+    background-size: 500px;
+    height: 232px;
+}
+
+.trait-rose {
+    position: absolute;
+    right: 150px;
+    bottom: -60px;
+    background-size: 50px;
+    left: 14px;
+}
+
+
+/*Bouton*/
+
+
+.bouton-vert {
+    font: 18px Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #44bd32;
+    color: white;
+}
+
+.bouton-vert:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/*###############################################*/
+
+#block-2 {
+    display: block;
+    text-align: center;
+     background: no-repeat #ffffff; 
+    background-position: 98% 2%;
+}
+
+
+.titre-photo {
+    display: block;
+}
+
+
+.text-gris-2 {
+    color: gray;
+    font-family: "PoppinsRegular";
+    font-size: 18px;
+}
+
+.nouveauter {
+    font-family: "VolkhovBold";
+    font-size: 50px;
+}
+
+/*#####################################*/
+
+.conteneur-carte {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.carte {
+    position: relative;
+    vertical-align: top;
+    width: 320px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 0 20px;
+}
+    
+.carte img {
+    max-width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.carte figure {
+    position: relative;
+    z-index: 2;
+    margin: 25px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 15px 12px #E8E8E8;
+}
+
+.carte figcaption {
+    line-height: 28px;
+    font-size: 18px;
+    padding: 20px;
+    font-family: "PoppinsRegular";
+    color: gray;
+    height: 100px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    display: block;
+    align-items: center;
+    z-index: 1;
+}
+
+
+/*###################################################*/
+
+#block-3 {
+    padding-bottom: 426px;
+    overflow: visible;
+
+    background-image: url("../img/souligne_rose.svg");
+    background-repeat: no-repeat;
+    background-position: 10% 28.8%;
+}
+
+#block-3::after {
+    background-image: url("../img/illustration_paysage.jpg");
+    background-size: cover;
+    transform: scale(1.75);
+    left: 50px;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -4px;
+    z-index: -1;
+    width: 100%;
+}
+
+#block-3 .conteneur-video {
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 160px;
+}
+
+#background-visu {
+    border-radius: 15px;
+}
+
+
+#block-3 .video-bouton {
+    position: absolute;
+    top: 29%;
+    left: 39%;
+    background: white;
+    height: 77px;
+    width: 77px;
+    border-radius: 50%;
+    display: flex;
+    cursor: wait;
+}
+
+#block-3 .h1-1 {
+    color: white;
+    font-family: "VolkhovBold";
+    min-width: 100%;
+    font-size: 84px;
+}
+
+#block-3 h5 {
+    line-height: 30px;
+    max-width: 460px;
+}
+
+#block-3 .conteneur-photo {
+    position: absolute;
+    height: 652px;
+    width: 100%;
+    z-index: 1;
+    left: -50px;
+    bottom: -326px;
+    overflow: hidden;
+    display: flex;
+}
+
+.conteneur-photo figure {
+    margin: 0;
+    width: 500px;
+    height: 100%;
+}
+
+.conteneur-photo figure img {
+    margin: 0;
+    width: 500px;
+    height: 100%;
+}
+
+#block-4 {
+    position: relative;
+    background-image: url("../img/illustration_pain.jpg ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 426px;
+}
+
+.texte-couleur-blanc {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+#block-4 h2 {
+    font-size: 50px;
+    color: #14183e;
+    margin-top: 10px;
+    font-family: "VolkhovBold";
+}
+
+#block-4 h4 {
+    font-size: 18px;
+    font-family: "PoppinsRegular";
+    color: gray;
+}
+
+.conteneur-elements {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.conteneur-arguments figure {
+    margin: 0;
+}
+
+#block-4 article {
+    max-width: 390px;
+}
+
+.conteneur-arguments .argument img {
+    width: 60px;
+    height: 60px;
+}
+
+.conteneur-arguments {
+    margin-bottom: 50px;
+}
+
+.conteneur-arguments a {
+    text-decoration: none;
+}
+
+.conteneur-arguments .argument {
+    white-space: nowrap;
+}
+
+.conteneur-arguments .argument:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.conteneur-arguments .argument img,
+.conteneur-arguments .argument figcaption {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.conteneur-arguments .argument figcaption {
+    margin: 13px 0 11px 20px;
+    padding: 0 0px 10px 0;
+}
+
+#block-4 .texte-claire {
+    font-family: "PoppinsBold";
+    font-size: 16px;
+    color: #f0fff4;
+    font-weight: bold;
+}
+#block-4 .texte-couleur-noire {
+    font-family: "PoppinsRegular";
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/*###########################################*/
+
+#block-5 {
+    background-color: white;
+}
+
+
+#block-5 .titre-block-5 {
+    text-align: center;
+    line-height: 1.2;
+}
+
+#block-5 .titre-h4 {
+    font-family: "PoppinsRegular";
+    color: #5E6282;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.conteneur-form {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    height: 580px;
+    box-shadow: 0px 0px 15px 12px #E8E8E8;
+}
+
+
+.form-gauche {
+    padding: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.form-droite,
+.form-gauche {
+    display: table-cell;
+    width: 40%;
+    height: 100%;
+    vertical-align: top;
+    text-align: left;
+}
+
+#block-5 .form-droite {
+    background: url(../img/sandwich_1.jpeg) no-repeat;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#block-5 h2 {
+    font-family: "VolkhovBold";
+    font-size: 50px;
+    color: #14183E;
+    margin-top: 10px;
+}
+
+#block-5 .texte-noir {
+    font-family: "PoppinsRegular";
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#block-5 .texte-gris-2 {
+    font-family: "PoppinsRegular";
+    font-size: 14px;
+    color: gray;
+    font-weight: 1;
+}
+
+.form-gauche form {
+    text-align: left;
+    padding: 40px 0 0 0;
+}
+
+.envoyer {
+    text-align: center;
+}
+
+.formulaire-contact-champ {
+    margin: 0 0 30px;
+}
+
+.formulaire-deux-champs-inline {
+    display: flex;
+}
+
+
+.formulaire-deux-champs-inline .formulaire-contact-champ {
+
+    width: 50%;
+}
+
+.formulaire-deux-champs-inline .formulaire-contact-champ:not(:last-child) {
+    padding: 0 15px 0 0;
+}
+
+.formulaire-contact-champ input {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: 0;
+}
+
+.formulaire-contact-champ input:focus {
+    background-color: white;
+}
+
+#block-5 form input {
+    width: 100%;
+    transition: 0.2s;
+    text-align: start;
+}
+
+#block-5 form input:hover {
+    width: 100%;
+    transform: scale(1.01);
+}
+
+.bouton-bleu {
+    background-color: #1A88FF;
+    box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 35%);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6%;
+    margin: 50px 0 0 0;
+    color: white;
+}
+
+
+label,
+input {
+    font-family: "PoppinsRegular";
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    font-size: 15px;
+}
+
+/*#######################################################*/
+
+footer {
+    background-color: #b9b9b9;
+    padding: 90px 8% 20px;
+    height: 50%;
+}
+
+footer p {
+    line-height: 147.5%;
+}
+
+.texte-couleur-gris-bleu {
+    font-size: 18px;
+    font-family: "PoppinsRegular";
+    color: #5E6282;
+    margin: 18px 0;
+}
+
+.texte-poppins-bold {
+    font-family: "PoppinsBold";
+    font-size: 21px;
+    color: black;
+}
+
+#footer-plan {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-plan div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px 0 0;
+}
+
+#footer-logo .logo-complet {
+    display: flex;
+    height: auto;
+}
+
+#footer-logo .logo-complet img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+footer .footer-part {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 10px 20px;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-family: "PoppinsRegular";
+}
+
+.app-download-button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.app-download-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.app-download-button span {
+    vertical-align: super;
+}
